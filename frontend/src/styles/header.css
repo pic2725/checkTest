@@ -1,0 +1,26 @@
+.background {
+     position: relative;
+     height: 1000px;
+     min-height: 500px;
+     width: 100%;
+     background: #161415 url(./header-background.jpg) no-repeat top center;
+     background-size: cover !important;
+     -webkit-background-size: cover !important;
+     text-align: center;
+     overflow: hidden;
+}
+.hidden-spacer {
+    height: 56px
+}
+
+.navbar {
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.navbar.active {
+    background: linear-gradient(90deg, #fff 0%, #fff 100%);
+}
+
