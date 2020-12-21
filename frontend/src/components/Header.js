@@ -25,8 +25,8 @@ const Header = () => {
     } else {
       setNavbar(false);
     }
-    console.log(navbar);
   };
+
   window.addEventListener("scroll", changeBackground);
 
   return (
@@ -81,10 +81,10 @@ const Header = () => {
                     <NavDropdown.Item>Users</NavDropdown.Item>
                   </LinkContainer>
                   <LinkContainer to="/admin/productlist">
-                    <NavDropdown.Item>Products</NavDropdown.Item>
+                    <NavDropdown.Item>Photos</NavDropdown.Item>
                   </LinkContainer>
                   <LinkContainer to="/admin/orderlist">
-                    <NavDropdown.Item>Orders</NavDropdown.Item>
+                    <NavDropdown.Item>downloads</NavDropdown.Item>
                   </LinkContainer>
                 </NavDropdown>
               )}

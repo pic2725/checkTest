@@ -1,0 +1,56 @@
+#about {
+
+    background: #2B2B2B;
+    margin-top: -1rem;
+    padding-top: 96px;
+    padding-bottom: 66px;
+    overflow: hidden;
+
+
+}
+
+#about #content {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+    
+}
+
+
+
+#about a,
+#about a:visited {
+    color: #fff;
+}
+
+#about a:hover,
+#about a:focus {
+    color: #11ABB0;
+}
+
+#about h2 {
+    font: 22px/30px 'opensans-bold', sans-serif;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+#about p {
+    line-height: 30px;
+    color: #7A7A7A;
+    font: 15px/30px 'opensans-bold', sans-serif;
+}
+
+#about .profile-pic {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin-right: 10em;
+    margin-bottom: 3em;
+}
+
+#about .contact-details {
+    width: 100%;
+}

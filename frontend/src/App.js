@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Container } from "react-bootstrap";
+
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HomeScreen from "./screens/HomeScreen";
@@ -18,12 +19,21 @@ import UserEditScreen from "./screens/UserEditScreen";
 import ProductListScreen from "./screens/ProductListScreen";
 import ProductEditScreen from "./screens/ProductEditScreen";
 import OrderListScreen from "./screens/OrderListScreen";
+import About from "./components/About";
+import Works from "./components/Works";
+
+import { useDispatch, useSelector } from "react-redux";
 
 //styles
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 
 const App = () => {
+  const dispatch = useDispatch();
+
+  const userLogin = useSelector((state) => state.userLogin);
+  const { userInfo } = userLogin;
+
   return (
     <Router>
       <Header />
@@ -59,8 +69,16 @@ const App = () => {
             component={HomeScreen}
             exact
           />
-          <Route path="/" component={HomeScreen} exact />
         </Container>
+
+        {userInfo ? (
+          <Container>
+            <Route path="/" component={HomeScreen} exact />
+          </Container>
+        ) : (
+          <About />
+        )}
+        {userInfo ? null : <Works />}
       </main>
       <Footer />
     </Router>
