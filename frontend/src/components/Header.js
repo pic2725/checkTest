@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import React from "react";
 import { Route } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { LinkContainer } from "react-router-bootstrap";
@@ -28,7 +27,6 @@ const Header = () => {
     }
     console.log(navbar);
   };
-
   window.addEventListener("scroll", changeBackground);
 
   return (
