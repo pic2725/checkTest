@@ -73,6 +73,7 @@ const Header = () => {
         className={
           userInfo ? "navbar active" : navbar ? "navbar active" : "navbar"
         }
+        bg="transparent"
         fixed="top"
         expand="lg"
         collapseOnSelect
