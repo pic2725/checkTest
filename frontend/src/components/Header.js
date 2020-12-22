@@ -24,6 +24,7 @@ import Loader from "./Loader";
 import { login } from "../actions/userActions";
 
 import "../styles/header.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const Header = () => {
   const dispatch = useDispatch();
