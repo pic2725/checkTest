@@ -55,6 +55,10 @@ const ProfileScreen = ({ location, history }) => {
 
   return (
     <Row>
+      <br />
+      <br />
+      <br />
+      <br />
       <Col md={3}>
         <h2>User Profile</h2>
         {message && <Message variant="danger">{message}</Message>}

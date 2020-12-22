@@ -30,6 +30,7 @@ const HomeScreen = ({ match }) => {
   return (
     <div className="homeScreen">
       <br />
+      <br />
       <Meta />
       {!keyword ? (
         <ProductCarousel />

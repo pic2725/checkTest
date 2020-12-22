@@ -45,6 +45,8 @@ const CartScreen = ({ match, location, history }) => {
       <Col md={8}>
         <br />
         <br />
+        <br />
+        <br />
         <h1>Shopping Cart</h1>
         {cartItems.length === 0 ? (
           <Message>
