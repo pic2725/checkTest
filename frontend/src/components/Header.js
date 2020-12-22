@@ -163,7 +163,10 @@ const Header = () => {
 
           <Row className="py-3">
             <Col>
-              New Customer? <Link to={"/register"}>Register</Link>
+              New User? (Currently disabled){" "}
+              <Link to={"/register"} disabled>
+                Register
+              </Link>
             </Col>
           </Row>
         </Modal.Body>
