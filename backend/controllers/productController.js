@@ -67,7 +67,7 @@ const createProduct = asyncHandler(async (req, res) => {
     category: "",
     countInStock: 0,
     numReviews: 0,
-    description: "",
+    description: "Sample description",
   });
 
   const createdProduct = await product.save();

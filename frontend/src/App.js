@@ -44,7 +44,11 @@ const App = () => {
           <Route path="/payment" component={PaymentScreen} />
           <Route path="/placeorder" component={PlaceOrderScreen} />
           <Route path="/login" component={LoginScreen} />
-          <Route path="/register" component={RegisterScreen} />
+          <Route
+            id="LoginError-btn"
+            path="/register"
+            component={RegisterScreen}
+          />
           <Route path="/profile" component={ProfileScreen} />
           <Route path="/product/:id" component={ProductScreen} />
           <Route path="/cart/:id?" component={CartScreen} />
